@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flight Ticket Checkout</title>
+    <link rel="stylesheet" href="/Styles/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <style>
+      .btn-outline-secondary {
+        width: 5rem;
+      }
+      .btn-outline-light {
+        width: 10rem;
+      }
+      .select {
+        margin-top: 2vh;
+        border: none;
+        border-bottom: 1px solid gray;
+        width: 100%;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+      .form-control {
+        margin-top: 2vh;
+        border: none;
+        border-bottom: 1px solid gray;
+        width: 100%;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+      .date {
+        margin-top: 2vh;
+      }
+      .position{
+      margin-top: 4vh;
+      margin-left: 60rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container-fluid justify-content-center">
+      <section class="container">
+        <div class="Card">
+          <div class="card-body bg-info justify-content-center">
+            <p class="card-text text-center">Travel Booking Form</p>
+          </div>
+        </div>
+        <section class="justify-content-center card-body row">
+          <div class="col">
+            <button class="btn btn-outline-secondary rounded-pill">
+              <i class="fas fa-plane text-info"></i>
+            </button>
+          </div>
+          <div class="col">
+            <button class="rounded-pill btn btn-outline-secondary">
+              <i class="fas fa-car text-success"></i>
+            </button>
+          </div>
+          <div class="col">
+            <button class="rounded-pill btn btn-outline-secondary">
+              <i class="fas fa-train text-danger"></i>
+            </button>
+          </div>
+        </section>
+        <section class="row">
+          <h4>Search for Cheap Flights</h4>
+          <div class="col">
+            <input type="radio" name="radiocheck" id="rad1" class="text-dark" />
+            <label> One Way </label>
+          </div>
+          <div class="col" style="width: 5rem">
+            <input
+              type="radio"
+              name="radiocheck"
+              id="rad2"
+              class="col text-dark"
+            />
+            <span> Round Trip </span>
+          </div>
+        </section>
+        <section class="row">
+          <div class="col">
+            <select name="City" id="City" class="select">
+              <option value="City/Airport" selected disabled>
+                City/Airport
+              </option>
+              <option value="Abuja">Nnamdi Azikwe Airport,Abuja</option>
+              <option value="Lagos">Muritala Muhammed Airport, Lagos</option>
+              <option value="Port-Harcourt">
+                Port Harcourt International Airport
+              </option>
+            </select>
+          </div>
+          <div class="col">
+            <select name="City" id="City" class="select">
+              <option value="City/Airport" selected disabled>
+                City/Airport
+              </option>
+              <option value="Abuja">Nnamdi Azikwe Airport,Abuja</option>
+              <option value="Lagos">Muritala Muhammed Airport, Lagos</option>
+              <option value="Port-Harcourt">
+                Port Harcourt International Airport
+              </option>
+            </select>
+          </div>
+        </section>
+        <section class="date row">
+          <div class="col form-floating">
+            <label class="text-secondary" for="floating Input"
+              ><i class="fas fa-calendar text-secondary"></i>Departure</label
+            >
+            <input
+              type="date"
+              name="Departing"
+              id="dept"
+              class="form-control"
+            />
+          </div>
+          <div class="col form-floating">
+            <label class="text-secondary" for="floating Input"
+              ><i class="fas fa-calendar text-secondary"></i>Arrival</label
+            >
+            <input type="date" name="Arrival" id="arri" class="form-control" />
+          </div>
+        </section>
+        <section class="time row">
+          <div class="time col form-floating">
+            <label class="text-secondary" for="flaoting-input"
+              >Departure Time</label
+            >
+            <input
+              class="form-control"
+              type="time"
+              name="timefordept"
+              id="time"
+            />
+          </div>
+          <div class="col form-floating">
+            <label class="time text-secondary" for="flaoting-input"
+              >Arrival Time</label
+            >
+            <input
+              class="form-control"
+              type="time"
+              name="timeforarrival"
+              id="time"
+            />
+          </div>
+        </section>
+        <section class="date row">
+          <div class="col">
+            <select class="select">
+              <option value="0" selected disabled>Kids(0-14)</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </div>
+          <div class="col">
+            <select class="select">
+              <option value="0" selected disabled>Adults(15-64)</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </div>
+          <div class="col">
+            <select class="select">
+              <option value="0" selected disabled>Seniors(65+)</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </div>
+        </section>
+        <section class="position  ">
+          <button class="btn btn-primary">
+            <span class="text-light">Find Flights</span>
+          </button>
+        </section>
+        
+        </section>
+      </section>
+    </main>
+
+    <script src="/js/bootstrap.min.js"></script>
+  </body>
+</html>
